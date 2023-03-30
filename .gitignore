@@ -1,0 +1,7 @@
+build
+node_modules
+.idea
+__pycache__
+backend/datasets
+backend/modal
+backend/original_datasets
