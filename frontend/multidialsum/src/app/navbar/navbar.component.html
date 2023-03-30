@@ -1,0 +1,24 @@
+<header class="header">
+    <nav class="nav" [class.active]="menuOpened">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="#" class="nav__link">Home</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Search Summaries</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">About</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Help</a>
+        </li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" (click)="toggleMenu()">
+      <span class="nav-toggle__line"></span>
+      <span class="nav-toggle__line"></span>
+      <span class="nav-toggle__line"></span>
+    </button>
+  </header>
+  
