@@ -1,8 +1,10 @@
-<form (ngSubmit)="onSubmit()" #inputForm="ngForm">
-    <div class="form-group">
-      <label for="textInput">Text Input:</label>
-      <input type="text" class="form-control" id="textInput" [(ngModel)]="inputText" name="textInput" required>
-    </div>
-    <button type="submit" class="btn btn-primary" [disabled]="!inputForm.form.valid">Submit</button>
-  </form>
-  
+<div class="input-text-field-container">
+    <form (ngSubmit)="onSubmit()" #inputForm="ngForm">
+      <div class="form-group">
+        <label for="textInput">Text Input:</label>
+        <input type="text" class="form-control" id="textInput" [(ngModel)]="inputText" name="textInput" required>
+      </div>
+      <button type="submit" class="btn-submit" [disabled]="!inputForm.form.valid">Submit</button>
+    </form>
+  </div>
+  <app-summary-viewer [summary]="summary"></app-summary-viewer>  

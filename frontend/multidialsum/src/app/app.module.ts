@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NavbarComponent } from './navbar/navbar.component';
 import { InputTextFieldComponent } from './input-text-field/input-text-field.component';
+import { SummaryViewerComponent } from './summary-viewer/summary-viewer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    InputTextFieldComponent
+    InputTextFieldComponent,
+    SummaryViewerComponent
   ],
   imports: [
     BrowserModule,
