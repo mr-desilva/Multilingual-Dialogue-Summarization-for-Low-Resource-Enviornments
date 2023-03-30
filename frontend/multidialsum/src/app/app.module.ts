@@ -1,22 +1,23 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NavbarComponent } from './navbar/navbar.component';
-import { SummarizerComponent } from './summarizer/summarizer.component';
+import { InputTextFieldComponent } from './input-text-field/input-text-field.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    SummarizerComponent
+    InputTextFieldComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

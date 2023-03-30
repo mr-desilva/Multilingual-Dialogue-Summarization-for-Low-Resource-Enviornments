@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SummarizerComponent } from './summarizer.component';
+import { InputTextFieldComponent } from './input-text-field.component';
 
-describe('SummarizerComponent', () => {
-  let component: SummarizerComponent;
-  let fixture: ComponentFixture<SummarizerComponent>;
+describe('InputTextFieldComponent', () => {
+  let component: InputTextFieldComponent;
+  let fixture: ComponentFixture<InputTextFieldComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SummarizerComponent ]
+      declarations: [ InputTextFieldComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(SummarizerComponent);
+    fixture = TestBed.createComponent(InputTextFieldComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
