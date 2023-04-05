@@ -13,7 +13,7 @@ export class InputTextFieldComponent {
   constructor(private http: HttpClient) { }
 
   onSubmit() {
-    const url = 'http://localhost:5000/api/summarize'; // Replace with your Flask API endpoint
+    const url = 'http://localhost:5000/api/summarize'; // summarize endpoint
 
     this.http.post(url, { text: this.inputText }).subscribe(
       (response: any) => {

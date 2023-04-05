@@ -3,7 +3,7 @@ from transformers import M2M100ForConditionalGeneration, M2M100Tokenizer
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 
 # Dialogue summarizer modal
-fine_tuned_modal_name = '../modal'
+fine_tuned_modal_name = '../../modal'
 tokenizer_fine_tuned = AutoTokenizer.from_pretrained(fine_tuned_modal_name)
 fine_tuned_modal = AutoModelForSeq2SeqLM.from_pretrained(fine_tuned_modal_name)
 
@@ -11,6 +11,14 @@ fine_tuned_modal = AutoModelForSeq2SeqLM.from_pretrained(fine_tuned_modal_name)
 model_name = "facebook/m2m100_418M"
 tokenizer = M2M100Tokenizer.from_pretrained(model_name)
 model = M2M100ForConditionalGeneration.from_pretrained(model_name)
+
+
+def generate_dialogue_summary(dialogue):
+    max_new_tokens = 50
+    input_ids = tokenizer_fine_tuned(dialogue, return_tensors='pt').input_ids
+    summary_ids = fine_tuned_modal.generate(input_ids, max_new_tokens=max_new_tokens)
+    summary_text = tokenizer_fine_tuned.decode(summary_ids[0], skip_special_tokens=True)
+    return summary_text
 
 
 def generate_mult_dialogue_summary(dialogue):
@@ -53,8 +61,3 @@ def m2m_translation(text, src_lang_code, tgt_lang_code):
     translated_sentence = tokenizer.decode(translation_output[0], skip_special_tokens=True)
     print('translated sentence in english - ' + translated_sentence)
     return translated_sentence
-
-
-# dialogue = '''Kunde: Hey, ich muss überprüfen, warum mein Telefon das Signal verliert? Support: Hallo, kann ich das Telefonmodal kennen? Kunde: Ja, das ist ein iPhone 14? Support: Haben Sie nach Software-Updates gesucht? Wenn nicht, aktualisieren Sie bitte Ihr Gerät auf die neueste Version. Kunde: Ja, es gibt ein Software-Update, ich werde versuchen, es Ihnen mitzuteilen. Unterstützung: Sicher Kunde: Ich habe die Software auf die neueste Version aktualisiert und jetzt ist das Problem mit dem Signalverlust behoben. Support: Helfen gerne.'''
-# print(generate_mult_dialogue_summary(dialogue))
-

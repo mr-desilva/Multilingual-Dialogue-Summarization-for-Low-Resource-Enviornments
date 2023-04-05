@@ -1,8 +1,8 @@
-rom transformers import AutoModelForSeq2SeqLM, AutoTokenizer
+from transformers import AutoModelForSeq2SeqLM, AutoTokenizer
 from datasets import load_dataset, load_metric
 
 model_names = [
-    "mr-desilva/bart-large-xsum-dialsum",  # Your fine-tuned model
+    "mr-desilva/bart-large-xsum-dialsum",  # Fine-tuned model
     "facebook/bart-large-cnn",             # Another pre-trained model
 ]
 

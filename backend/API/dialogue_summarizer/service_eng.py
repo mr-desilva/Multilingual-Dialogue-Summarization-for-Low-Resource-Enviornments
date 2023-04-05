@@ -27,3 +27,15 @@ def generate_dialogue_summary(dialogue):
 # Support: Happy to help.'''
 #
 # print(generate_dialogue_summary(sum))
+
+
+# sum = ''''Customer: Hey, I have to check why my phone loses the signal?
+# Support: Hello, I can know the phone modal?
+# Customer: Yes, this is an iPhone 14?
+# Support: Have you searched for software updates? If not, please update your device to the latest version.
+# Customer: Yes, there is a software update, I will try to inform you.
+# Support: Safe
+# Customer: I have updated the software to the latest version and now the problem with the signal loss is solved.
+# Support: please help.'''
+
+# print(generate_dialogue_summary(sum))
