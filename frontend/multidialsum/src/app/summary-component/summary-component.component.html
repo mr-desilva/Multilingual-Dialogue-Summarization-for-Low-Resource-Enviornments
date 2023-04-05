@@ -1,0 +1,63 @@
+ <!-- <div class="container">
+  <div class="text-area-container">
+    <textarea
+      [(ngModel)]="dialogue"
+      rows="4"
+      cols="50"
+      placeholder="Enter your dialogue here"
+      (change)="onInputChange()"
+    ></textarea>
+    <button class="generate-summary-btn" (click)="generateSummary()">Generate Summary</button>
+  </div>
+  <div class="language-container">
+    <i class="icon" *ngIf="!loading"></i>
+    <div class="spinner" *ngIf="loading"></div>
+    <span *ngIf="loading">Detecting Language and Generating the Summary</span>
+    <span *ngIf="!summaryGenerated && !loading">Welcome to MultiDialSum</span>
+    <span *ngIf="summaryGenerated">Language Detected - {{language}}</span>
+    <button class="info-btn" (click)="showInfo()">i</button>
+  </div>
+  <div class="summary-container">
+    <div class="summary-content">{{summary}}</div>
+    <div class="summary-container-emptybox"></div>
+    <button
+      class="save-summary-btn"
+      [disabled]="!summaryGenerated"
+      (click)="saveSummary()"
+    >Save Summary</button>
+  </div>
+</div> -->
+
+
+<div class="container">
+  <div class="text-area-container">
+    <textarea
+      [(ngModel)]="dialogue"
+      rows="4"
+      cols="50"
+      placeholder="Enter your dialogue here"
+      (change)="onInputChange()"
+    ></textarea>
+    <button class="generate-summary-btn" (click)="generateSummary()">Generate Summary</button>
+  </div>
+  <div class="language-container">
+    <i class="icon" *ngIf="!loading"></i>
+    <div class="spinner" *ngIf="loading"></div>
+    <span *ngIf="loading">Detecting Language and Generating the Summary</span>
+    <span *ngIf="!summaryGenerated && !loading">Welcome to MultiDialSum</span>
+    <span *ngIf="summaryGenerated">Language Detected - {{language}}</span>
+    <button class="info-btn" (click)="showInfo()">i</button>
+  </div>
+
+  <div class="summary-area-container">
+    <textarea
+      [(ngModel)]="summary"
+      rows="4"
+      cols="50"
+      placeholder="Generated Summary Will be displayed here"
+      (change)="onInputChange()"
+    ></textarea>
+    <button class="save-summary-btn" [disabled]="!summaryGenerated" (click)="saveSummary()">Save Summary</button>
+  </div>
+  
+</div>

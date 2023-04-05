@@ -18,10 +18,11 @@ def get_data():
 # English to English summary generation endpoint
 @app.route('/api/summarize', methods=['POST'])
 def get_summary():
+    lang_detect = 'English'
     data = request.json
     text = data.get('text', '')
     summary = generate_dialogue_summary(text)
-    return jsonify(summary)
+    return jsonify({'summary': summary, 'lang': lang_detect})
 
 
 # Any language summary generation endpoint
@@ -29,8 +30,8 @@ def get_summary():
 def get_summary_multi():
     data = request.json
     text = data.get('text', '')
-    summary = generate_mult_dialogue_summary(text)
-    return jsonify(summary)
+    summary, lang_detect = generate_mult_dialogue_summary(text)
+    return jsonify({'summary': summary, 'lang': lang_detect})
 
 
 if __name__ == '__main__':

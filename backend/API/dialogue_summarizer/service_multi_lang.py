@@ -39,7 +39,7 @@ def generate_mult_dialogue_summary(dialogue):
     # Translate summary back to the source language
     translated_summary = m2m_translation(summary_text, 'en', src_lang_code)
 
-    return translated_summary
+    return translated_summary, src_lang_code
 
 
 def identify_src_lang(dialogue):

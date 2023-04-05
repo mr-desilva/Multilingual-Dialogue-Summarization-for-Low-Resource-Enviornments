@@ -7,13 +7,15 @@ import { HttpClientModule } from '@angular/common/http';
 import { NavbarComponent } from './navbar/navbar.component';
 import { InputTextFieldComponent } from './input-text-field/input-text-field.component';
 import { SummaryViewerComponent } from './summary-viewer/summary-viewer.component';
+import { SummaryComponentComponent } from './summary-component/summary-component.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     InputTextFieldComponent,
-    SummaryViewerComponent
+    SummaryViewerComponent,
+    SummaryComponentComponent
   ],
   imports: [
     BrowserModule,

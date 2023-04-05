@@ -26,3 +26,18 @@ export class InputTextFieldComponent {
     );
   }
 }
+
+
+// // Use this for mock development
+//   onSubmit() {
+//     // Mock JSON response object
+//     const mockResponse = {
+//       summary: 'This is a mock summary of the input text.',
+//     };
+  
+//     // Simulate an API call delay using setTimeout
+//     setTimeout(() => {
+//       this.summary = mockResponse.summary;
+//       console.log(mockResponse);
+//     }, 1000); // Adjust the delay (in milliseconds) as needed
+//   }

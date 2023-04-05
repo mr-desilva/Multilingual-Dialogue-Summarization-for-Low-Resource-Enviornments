@@ -1,10 +1,24 @@
+<!-- <div class="input-text-field-container">
+  <form (ngSubmit)="onSubmit()" #inputForm="ngForm">
+    <div class="form-group">
+      <label for="textAreaInput">Text Area Input:</label>
+      <textarea class="form-control" id="textAreaInput" [(ngModel)]="inputText" name="textInput" required></textarea>
+    </div>
+    <button type="submit" class="btn-submit" [disabled]="!inputForm.form.valid">Submit</button>
+  </form>
+  <app-summary-viewer [summary]="summary"></app-summary-viewer>  
+</div> -->
+
+
 <div class="input-text-field-container">
+  <div class="container">
     <form (ngSubmit)="onSubmit()" #inputForm="ngForm">
       <div class="form-group">
-        <label for="textInput">Text Input:</label>
-        <input type="text" class="form-control" id="textInput" [(ngModel)]="inputText" name="textInput" required>
+        <label for="textAreaInput">Text Area Input:</label>
+        <textarea class="form-control" id="textAreaInput" [(ngModel)]="inputText" name="textInput" required></textarea>
       </div>
       <button type="submit" class="btn-submit" [disabled]="!inputForm.form.valid">Submit</button>
     </form>
+    <app-summary-viewer [summary]="summary"></app-summary-viewer>
   </div>
-  <app-summary-viewer [summary]="summary"></app-summary-viewer>  
+</div>
