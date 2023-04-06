@@ -10,19 +10,22 @@
     flex: 1;
     box-sizing: border-box;
     height: 320px;
-    border-radius: 4px;
+    border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    background-color: #f8f9fa;
+    background-color: #ffffff;
     width: 100%;
   }
 
   .text-area-container textarea {
-    padding: 8px;
+    flex: 1;
     font-size: 14px;
-    border: 1px solid #0783ff;
-    border-radius: 4px;
-    width: 96%;
-    height: 95%;
+    box-sizing: border-box;
+    height: 320px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    border-radius: 12px;
+    border: none;
+    width: 100%;
   }
   
   /* .language-container{
@@ -63,6 +66,8 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 22%;
     height: 320px;
+    border-radius: 12px;
+    margin: 10px;
   }
   
   .summary-container {
@@ -93,11 +98,14 @@
     border: none;
     cursor: pointer;
     margin-top: 5px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.3s;
+    border-radius: 4px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
   }
   
   .generate-summary-btn:hover {
     background-color: #0056b3;
+    transform: translateY(-2px);
   }
   
 
@@ -140,23 +148,40 @@
 
   /* test */
   .summary-area-container{
-    flex: 1;
+    /* flex: 1;
     box-sizing: border-box;
     height: 320px;
     border-radius: 4px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    background-color: #f8f9fa;
+    background-color: #f8f9fa; */
+    flex: 1;
+    box-sizing: border-box;
+    height: 320px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    width: 100%;
     /* width: 100%; */
   }
 
   .summary-area-container textarea {
-    padding: 8px;
+    /* padding: 8px;
     font-size: 14px;
     border: 1px solid #fafcfd;
-    border-radius: 4px;
+    border-radius: 4px; */
     /* width: 100%; */
-  }
 
+    flex: 1;
+    font-size: 14px;
+    box-sizing: border-box;
+    height: 320px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    border-radius: 12px;
+    border: none;
+    width: 100%;
+  }
+  
   .save-summary-btn {
     display: block;
     width: 100%;
@@ -168,10 +193,12 @@
     border: none;
     cursor: pointer;
     margin-top: 5px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.3s;
+    border-radius: 4px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
   }
   
   .save-summary-btn:disabled {
     background-color: #6c757d;
-    cursor: not-allowed;
+    transform: translateY(-2px);
   }

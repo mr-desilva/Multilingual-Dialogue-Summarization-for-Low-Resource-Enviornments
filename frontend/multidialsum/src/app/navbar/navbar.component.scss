@@ -1,59 +1,173 @@
+// .header {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   padding: 1.5rem 1rem;
+//   background-color: #333;
+//   position: relative;
+// }
+
+// .logo {
+//   color: #fff;
+//   text-decoration: none;
+//   font-size: 1.5rem;
+// }
+
+// .nav {
+//   position: absolute;
+//   top: 100%;
+//   left: 0;
+//   width: 100%;
+//   background-color: #333;
+//   overflow: hidden;
+//   max-height: 0;
+//   transition: max-height 0.3s ease;
+// }
+
+// .nav.active {
+//   max-height: 300px;
+// }
+
+// .nav__list {
+//   list-style-type: none;
+//   padding: 0;
+//   margin: 0;
+// }
+
+// .nav__item {
+//   text-align: center;
+// }
+
+// .nav__link {
+//   display: block;
+//   padding: 0.5rem 1rem;
+//   color: #fff;
+//   text-decoration: none;
+// }
+
+// .nav__link:hover {
+//   background-color: #444;
+// }
+
+// .nav-toggle {
+//   background-color: transparent;
+//   border: none;
+//   cursor: pointer;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-between;
+//   height: 24px;
+//   position: relative;
+//   z-index: 2;
+// }
+
+// .nav-toggle__line {
+//   background-color: #fff;
+//   height: 2px;
+//   width: 24px;
+// }
+
+// @media (min-width: 768px) {
+//   .nav {
+//     position: static;
+//     display: flex;
+//     max-height: none;
+//     overflow: visible;
+//   }
+
+//   .nav__item {
+//     text-align: left;
+//   }
+
+//   .nav__link {
+//     padding: 0 0.5rem;
+//   }
+
+//   .nav-toggle {
+//     display: none;
+//   }
+// }
+
+
+// @media (min-width: 768px) {
+//   .nav {
+//     position: static;
+//     display: flex;
+//     max-height: none;
+//     overflow: visible;
+//   }
+
+//   .nav__list {
+//     display: flex; // Make the nav items display horizontally
+//     justify-content: center; // Center the nav items
+//     width: 100%; // Ensure the nav items take up the full width of the nav container
+//   }
+
+//   .nav__item {
+//     text-align: center;
+//   }
+
+//   .nav__link {
+//     padding: 0 0.5rem;
+//   }
+
+//   .nav-toggle {
+//     display: none;
+//   }
+// }
+
+
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 1rem;
-  background-color: #333;
+  padding: 1rem 2rem;
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   position: relative;
 }
 
 .logo {
-  color: #fff;
+  color: #333;
   text-decoration: none;
   font-size: 1.5rem;
 }
 
 .nav {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  background-color: #333;
-  overflow: hidden;
-  max-height: 0;
-  transition: max-height 0.3s ease;
-}
-
-.nav.active {
-  max-height: 300px;
+  display: flex;
 }
 
 .nav__list {
+  display: flex;
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
 .nav__item {
-  text-align: center;
+  margin-left: 1rem;
 }
 
 .nav__link {
   display: block;
   padding: 0.5rem 1rem;
-  color: #fff;
+  color: #333;
   text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
 }
 
-.nav__link:hover {
-  background-color: #444;
+.nav__link:hover,
+.nav__link.active {
+  color: #007bff;
 }
 
 .nav-toggle {
+  display: none;
   background-color: transparent;
   border: none;
   cursor: pointer;
-  display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 24px;
@@ -62,56 +176,56 @@
 }
 
 .nav-toggle__line {
-  background-color: #fff;
+  background-color: #333;
   height: 2px;
   width: 24px;
-}
-
-@media (min-width: 768px) {
-  .nav {
-    position: static;
-    display: flex;
-    max-height: none;
-    overflow: visible;
-  }
-
-  .nav__item {
-    text-align: left;
-  }
-
-  .nav__link {
-    padding: 0 0.5rem;
-  }
-
-  .nav-toggle {
-    display: none;
-  }
+  transition: background-color 0.3s;
 }
 
 
-@media (min-width: 768px) {
+.logo-link {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 40px; // Adjust the logo size as needed
+  width: auto;
+}
+
+
+.nav-toggle:hover .nav-toggle__line {
+  background-color: #007bff;
+}
+
+@media (max-width: 768px) {
   .nav {
-    position: static;
-    display: flex;
-    max-height: none;
-    overflow: visible;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
   }
 
-  .nav__list {
-    display: flex; // Make the nav items display horizontally
-    justify-content: center; // Center the nav items
-    width: 100%; // Ensure the nav items take up the full width of the nav container
+  .nav.show {
+    display: flex;
+    flex-direction: column;
   }
 
   .nav__item {
-    text-align: center;
+    margin-left: 0;
+    border-top: 1px solid #f0f0f0;
   }
 
   .nav__link {
-    padding: 0 0.5rem;
+    padding: 0.5rem 2rem;
   }
 
   .nav-toggle {
-    display: none;
+    display: flex;
+  }
+  .nav.active {
+    max-height: 300px;
   }
 }

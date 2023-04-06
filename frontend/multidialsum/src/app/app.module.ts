@@ -7,12 +7,12 @@ import { HttpClientModule } from '@angular/common/http';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SummaryComponentComponent } from './summary-component/summary-component.component';
 import { SummaryNavigationComponent } from './summary-navigation/summary-navigation.component';
-import { WelcomeComponent } from './welcome/welcome.component';
 import { SummaryComponentEnglishComponent } from './summary-component-english/summary-component-english.component';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 import { environment } from '../environments/environment';
 import { SearchSummaryComponent } from './search-summary/search-summary.component';
+import { AboutComponent } from './about/about.component';
 
 
 @NgModule({
@@ -21,9 +21,9 @@ import { SearchSummaryComponent } from './search-summary/search-summary.componen
     NavbarComponent,
     SummaryComponentComponent,
     SummaryNavigationComponent,
-    WelcomeComponent,
     SummaryComponentEnglishComponent,
-    SearchSummaryComponent
+    SearchSummaryComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
