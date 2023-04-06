@@ -12,6 +12,7 @@ import { SummaryComponentEnglishComponent } from './summary-component-english/su
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 import { environment } from '../environments/environment';
+import { SearchSummaryComponent } from './search-summary/search-summary.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { environment } from '../environments/environment';
     SummaryComponentComponent,
     SummaryNavigationComponent,
     WelcomeComponent,
-    SummaryComponentEnglishComponent
+    SummaryComponentEnglishComponent,
+    SearchSummaryComponent
   ],
   imports: [
     BrowserModule,

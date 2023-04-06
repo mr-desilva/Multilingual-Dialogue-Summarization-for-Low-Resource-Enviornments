@@ -1,0 +1,28 @@
+<div>
+    <app-navbar></app-navbar>
+    <router-outlet></router-outlet>
+  </div>
+  
+  <br>
+  
+  <div class="search-bar">
+    <input class="search-input" [(ngModel)]="searchText" (input)="onSearch()" placeholder="Search for summaries" />
+  </div>
+  
+  <div *ngIf="filteredSummaries.length === 0" class="no-results">
+    <p>No matching summaries found.</p>
+  </div>
+  
+  <div class="summary-container">
+    <div *ngFor="let summary of filteredSummaries" class="summary-item">
+      <div class="dialogue">
+        <h4>Dialogue:</h4>
+        <p>{{ summary.dialogue }}</p>
+      </div>
+      <div class="summary">
+        <h4>Summary:</h4>
+        <p>{{ summary.summary }}</p>
+      </div>
+    </div>
+  </div>
+  
