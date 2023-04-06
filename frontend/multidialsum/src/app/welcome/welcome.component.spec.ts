@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SummaryViewerComponent } from './summary-viewer.component';
+import { WelcomeComponent } from './welcome.component';
 
-describe('SummaryViewerComponent', () => {
-  let component: SummaryViewerComponent;
-  let fixture: ComponentFixture<SummaryViewerComponent>;
+describe('WelcomeComponent', () => {
+  let component: WelcomeComponent;
+  let fixture: ComponentFixture<WelcomeComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SummaryViewerComponent ]
+      declarations: [ WelcomeComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(SummaryViewerComponent);
+    fixture = TestBed.createComponent(WelcomeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

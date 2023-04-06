@@ -2,14 +2,16 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import Swal from 'sweetalert2';
 import ISO6391 from 'iso-639-1';
+import fileDownload from 'js-file-download';
 import { AngularFireDatabase } from '@angular/fire/compat/database';
 
 @Component({
-  selector: 'app-summary-component',
-  templateUrl: './summary-component.component.html',
-  styleUrls: ['./summary-component.component.css']
+  selector: 'app-summary-component-english',
+  templateUrl: './summary-component-english.component.html',
+  styleUrls: ['./summary-component-english.component.css']
 })
-export class SummaryComponentComponent implements OnInit {
+
+export class SummaryComponentEnglishComponent implements OnInit {
   dialogue: string = '';
   language: string = '';
   summary: string = '';
@@ -65,7 +67,7 @@ export class SummaryComponentComponent implements OnInit {
   //     return;
   //   }
   //   this.loading = true;
-  //   const apiUrl = 'http://localhost:5000/api/summarize/multi';
+  //   const apiUrl = 'http://localhost:5000/api/summarize';
 
   //   // Send the input to the Flask backend
   //   this.http.post(apiUrl, { text: this.dialogue }).subscribe(
@@ -82,7 +84,6 @@ export class SummaryComponentComponent implements OnInit {
   //     }
   //   );
   // }
-
   // Use this for mock development
   generateSummary() {
 
@@ -98,7 +99,7 @@ export class SummaryComponentComponent implements OnInit {
 
     // Mock JSON response object
     const mockResponse = {
-      summary: 'This is a mock summary of the input text.', lang: 'en'
+      summary: 'This is a mock summary of the english input text.', lang: 'en'
     };
   
     // Simulate an API call delay using setTimeout
