@@ -2,7 +2,6 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import Swal from 'sweetalert2';
 import ISO6391 from 'iso-639-1';
-import fileDownload from 'js-file-download';
 import { AngularFireDatabase } from '@angular/fire/compat/database';
 
 @Component({
