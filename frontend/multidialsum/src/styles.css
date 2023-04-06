@@ -1,9 +1,8 @@
-/* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 body {
-    font-family: 'Roboto', sans-serif; /* Replace 'Roboto' with your desired font */
-    background-image: url('assets/bg.png');
+    font-family: 'Roboto', sans-serif;
+    background-image: url('assets/bg2.jpeg');
     background-size: cover;
     background-repeat: repeat;
     background-position: center center;
