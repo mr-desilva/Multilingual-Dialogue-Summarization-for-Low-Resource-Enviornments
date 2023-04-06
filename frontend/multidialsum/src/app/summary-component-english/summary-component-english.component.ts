@@ -46,7 +46,7 @@ export class SummaryComponentEnglishComponent implements OnInit {
   }
 
   saveSummary(dialogue: string, summary: string, language: string) {
-    // this.db.list(language.toLowerCase() + '_summaries').push({ dialogue, summary});
+    // this.db.list(language.toLowerCase() + '_summaries').push({ dialogue, summary});  # think of way to load without the lang code
     this.db.list('summaries').push({ dialogue, summary});
 
     Swal.fire({

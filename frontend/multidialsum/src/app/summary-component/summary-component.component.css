@@ -3,6 +3,7 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    padding: 12px;
   }
   
   .text-area-container{
@@ -21,16 +22,16 @@
     border: 1px solid #0783ff;
     border-radius: 4px;
     width: 96%;
-    height: 96%;
+    height: 95%;
   }
   
-  .language-container{
+  /* .language-container{
     flex: 1;
     box-sizing: border-box;
     height: 320px;
     border-radius: 4px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
+  } */
 
   .summary-container {
     flex: 1;
@@ -41,9 +42,8 @@
   }
   
   textarea {
-    width: 483px;
-height: 305px;
-    /* resize: none; */
+    width: 97%;
+    height: 95%;
   }
   
   /* .language-container {
@@ -61,10 +61,8 @@ height: 305px;
     background-color: #f8f9fa;
     border-radius: 4px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 30%;
-  }
-  .icon {
-    /* Add your icon style here */
+    width: 22%;
+    height: 320px;
   }
   
   .summary-container {
@@ -148,7 +146,6 @@ height: 305px;
     border-radius: 4px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     background-color: #f8f9fa;
-    width: 100%;
   }
 
   .summary-area-container textarea {
@@ -156,7 +153,6 @@ height: 305px;
     font-size: 14px;
     border: 1px solid #fafcfd;
     border-radius: 4px;
-    width: 100%;
   }
 
   .save-summary-btn {
