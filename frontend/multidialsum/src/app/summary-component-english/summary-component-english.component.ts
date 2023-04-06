@@ -37,7 +37,7 @@ export class SummaryComponentEnglishComponent implements OnInit {
     Swal.fire({
       icon: 'info',
       title: 'Info',
-      text: 'Language of the input dialogue is automatically detected by the modal',
+      text: 'Modal will generate summaries for english dialogues',
     });
   }
 
