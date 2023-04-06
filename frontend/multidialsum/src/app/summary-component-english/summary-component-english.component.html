@@ -2,6 +2,15 @@
     <app-navbar></app-navbar>
     <router-outlet></router-outlet>
   </div>
+
+  <div class="card">
+    <div class="card__header">
+      <h2>MultiDialSum</h2>
+    </div>
+    <div class="card__content">
+      <p>Multilingual Dialogue Summary Generation System.</p>
+    </div>
+  </div>
   
   <br>
   <app-summary-navigation></app-summary-navigation>
@@ -18,10 +27,10 @@
       <button class="generate-summary-btn" (click)="generateSummary()">Generate Summary</button>
     </div>
     <div class="language-container">
-      <i class="icon" *ngIf="!loading"></i>
+      <i class="icon-lang" *ngIf="!loading"></i>
       <div class="spinner" *ngIf="loading"></div>
       <span *ngIf="loading">Generating the Summary</span>
-      <span *ngIf="!summaryGenerated && !loading">Welcome to MultiDialSum - English Mode</span>
+      <span *ngIf="!summaryGenerated && !loading">English Mode</span>
       <span *ngIf="summaryGenerated">Language Detected - {{language}}</span>
       <button class="info-btn" (click)="showInfo()">i</button>
     </div>
