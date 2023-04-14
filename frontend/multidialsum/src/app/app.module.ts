@@ -10,6 +10,7 @@ import { SummaryNavigationComponent } from './summary-navigation/summary-navigat
 import { SummaryComponentEnglishComponent } from './summary-component-english/summary-component-english.component';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
+// import { environment } from '../environments/environment';
 import { environment } from '../environments/environment';
 import { SearchSummaryComponent } from './search-summary/search-summary.component';
 import { AboutComponent } from './about/about.component';
