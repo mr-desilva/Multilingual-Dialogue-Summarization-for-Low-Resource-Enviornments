@@ -74,7 +74,7 @@ export class SummaryComponentEnglishComponent implements OnInit {
       (response: any) => {
         // Update the summary with the response from the Flask backend
         this.summary = response.summary;
-        this.language = this.getLanguageName(response.lang);
+        this.language = 'English';
         this.loading = false;
         this.summaryGenerated = true;
       },
