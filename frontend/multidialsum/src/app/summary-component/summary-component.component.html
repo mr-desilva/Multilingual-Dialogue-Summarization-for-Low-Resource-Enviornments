@@ -17,6 +17,16 @@
 
 <div class="container">
   <div class="text-area-container">
+
+      <a> Select a example Dialogue : </a>
+
+      <select [(ngModel)]="selectedOption" (change)="onOptionSelected()">
+        <option value="option1">Chinese Example</option>
+        <option value="option2">German Example</option>
+        <option value="option3">Spanish Example</option>
+      </select>
+
+
     <textarea
       [(ngModel)]="dialogue"
       rows="4"
