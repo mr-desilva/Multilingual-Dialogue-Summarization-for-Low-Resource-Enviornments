@@ -24,7 +24,8 @@ min_length = np.min(dialogue_lengths)
 max_length = np.max(dialogue_lengths)
 
 print(
-    f"Mean: {mean_length}, Median: {median_length}, Standard Deviation: {std_length}, Min: {min_length}, Max: {max_length}")
+    f"Mean: {mean_length}, Median: {median_length}, "
+    f"Standard Deviation: {std_length}, Min: {min_length}, Max: {max_length}")
 
 # Visualize the distribution using a histogram
 plt.hist(dialogue_lengths, bins="auto")

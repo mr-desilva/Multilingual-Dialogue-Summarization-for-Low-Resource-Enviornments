@@ -58,7 +58,7 @@ def thresholdCheck(dialogue):
 def generate_dialogue_summary(dialogue):
     dialogue = remove_emojis(dialogue)
     if thresholdCheck(dialogue):
-        max_new_tokens = 50
+        max_new_tokens = 60
         input_ids = tokenizer_fine_tuned(dialogue, return_tensors='pt').input_ids
         summary_ids = fine_tuned_modal.generate(input_ids, max_new_tokens=max_new_tokens)
         summary_text = tokenizer_fine_tuned.decode(summary_ids[0], skip_special_tokens=True)
