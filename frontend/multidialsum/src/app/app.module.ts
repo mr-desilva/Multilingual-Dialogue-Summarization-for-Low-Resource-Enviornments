@@ -13,6 +13,7 @@ import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 import { environment } from '../environments/environment';
 import { SearchSummaryComponent } from './search-summary/search-summary.component';
 import { AboutComponent } from './about/about.component';
+import { DocumentationComponent } from './documentation/documentation.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { AboutComponent } from './about/about.component';
     SummaryNavigationComponent,
     SummaryComponentEnglishComponent,
     SearchSummaryComponent,
-    AboutComponent
+    AboutComponent,
+    DocumentationComponent
   ],
   imports: [
     BrowserModule,
