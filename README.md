@@ -14,6 +14,12 @@ This research project aims to contribute following factors.
 ----------
 
 
+### Proposed System Design
+<img src="https://github.com/mr-desilva/Final-Year-Project/blob/main/images/img2.png">
+
+### Model Architecture
+<img src="https://github.com/mr-desilva/Final-Year-Project/blob/main/images/img3.png">
+
 ### Sample of the web application
 
 <img src="https://github.com/mr-desilva/Final-Year-Project/blob/main/images/img1.png">
