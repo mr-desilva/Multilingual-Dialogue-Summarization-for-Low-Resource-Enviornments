@@ -7,28 +7,35 @@
 
 <div class="card">
     <div class="card__header">
-      <h2>About The Project</h2>
+      <h2>Fine Tuned bart-large-xsum model</h2>
     </div>
     <div class="card__content">
-      <p>Information about your organization, its mission, history, and other relevant details.</p>
+      <p>This model is fine tuned using TWEETSUM dataset. Which contains 1100 dialogues and summary pairs which are annotated by humans.
+        Model is trained using the huggingface library.
+      </p>
     </div>
   </div>
 
   <div class="card">
     <div class="card__header">
-      <h2>Technologies</h2>
+      <h2>Cross-lingual Transfer Model m2m100</h2>
     </div>
     <div class="card__content">
-      <p>Information about your organization, its mission, history, and other relevant details.</p>
+      <p>This model is a many to many model which can translate language between multiple languages. This model supports 97 languages, but the performance on the each language may not be the same
+        due to it's different amount of training data in each language.
+      </p>
     </div>
   </div>
 
   <div class="card">
     <div class="card__header">
-      <h2>Author</h2>
+      <h2>Evaluation and Testing</h2>
     </div>
     <div class="card__content">
-      <p>Information about your organization, its mission, history, and other relevant details.</p>
+      <p>bart-large-xsum based dialogue summarization model is tested using rouge score, The initial dataset were split into
+        training, testing and evaluation data. Fine tuned model is tested using the evalution data. Evaluation on the entire system with multiple dialogues were done using
+        human evaluation method. Including english german, spanish and french dialogue-summary pairs were included in a survey. Participants for the survey is selected from social media
+      platforms where people are fluent with certain language specially from language learning spaces.</p>
     </div>
   </div>
   

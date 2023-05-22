@@ -1,0 +1,54 @@
+English
+Customer: Hey, I need to check why my phone is loosing signal ?
+Support: Hello, can I know the phone modal?
+Customer: Yes, this is a iphone 14?
+Support: Did you check for any software updates ? if not please update your device to latest version. 
+Customer: Yes, there is a software update, I'll try and let you know.
+Support: Sure
+Customer: I have updates the software to the latest version and now the signal loosing issue is resolved. 
+Support: Happy to help.
+
+
+Customer: Hi, I'm having trouble logging into my account. Can you help me?
+Support Agent: Of course, I'd be happy to help. Can you tell me your username and the email address associated with your account?
+Customer: My username is johnsmith42 and the email is johnsmith42@yahoo.com
+Support Agent: Thanks, let me take a look at your account. It looks like there's been some suspicious activity on your account, so we've temporarily disabled it for security reasons.
+Customer: Oh no, what kind of activity?
+Support Agent: It looks like someone tried to log into your account from a different country, which triggered our security system. But don't worry, we can help you reactivate your account. Can you verify some information for me, such as your full name and date of birth?
+Customer: Sure, my name is John Smith and my date of birth is April 5th, 1990.
+Support Agent: Great, thanks for verifying that information. I'm going to send a verification code to your email address. Once you receive it, please enter it on the login screen to reactivate your account.
+Customer: Okay, I'll keep an eye out for the email. Thank you for your help!
+Support Agent: You're welcome. Let me know if you have any other questions or concerns.
+
+
+German
+Kunde: Hey, ich muss überprüfen, warum mein Telefon das Signal verliert?
+Support: Hallo, kann ich das Telefonmodal kennen?
+Kunde: Ja, das ist ein iPhone 14?
+Support: Haben Sie nach Software-Updates gesucht? Wenn nicht, aktualisieren Sie bitte Ihr Gerät auf die neueste Version.
+Kunde: Ja, es gibt ein Software-Update, ich werde versuchen, es Ihnen mitzuteilen.
+Unterstützung: Sicher
+Kunde: Ich habe die Software auf die neueste Version aktualisiert und jetzt ist das Problem mit dem Signalverlust behoben.
+Support: Helfen gerne.
+
+
+Spanish
+Cliente: Oye, necesito verificar por qué mi teléfono pierde señal.
+Soporte: Hola, ¿puedo saber el modal del teléfono?
+Cliente: Sí, ¿es un iphone 14?
+Soporte: ¿Buscaste alguna actualización de software? si no, actualice su dispositivo a la última versión.
+Cliente: Sí, hay una actualización de software, lo intentaré y te lo haré saber.
+Soporte: Claro
+Cliente: actualicé el software a la última versión y ahora se resolvió el problema de pérdida de señal.
+Soporte: Feliz de ayudar.
+
+
+French
+Cliente: Hey, j'ai besoin de vérifier pourquoi mon téléphone perd le signal ?
+soutien: Bonjour, puis-je connaître le téléphone modal?
+Cliente: Oui, c'est un iphone 14 ?
+soutien: Avez-vous vérifié les mises à jour logicielles ? sinon, veuillez mettre à jour votre appareil vers la dernière version.
+Cliente: Oui, il y a une mise à jour logicielle, je vais essayer de vous tenir au courant.
+soutien: Bien sûr
+Cliente: J'ai mis à jour le logiciel vers la dernière version et maintenant le problème de perte de signal est résolu.
+soutien: Heureux de pouvoir vous aider.

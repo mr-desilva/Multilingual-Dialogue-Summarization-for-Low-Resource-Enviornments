@@ -2,21 +2,19 @@
   export const environment = {
     production: false,
     firebase: {
-        apiKey: "AIzaSyAmfSSeJoPLUSG81zib7r0w3tmjKYNxjKw",
-  
-        authDomain: "multidialsum.firebaseapp.com",
-      
-        databaseURL: "https://multidialsum-default-rtdb.firebaseio.com",
-      
-        projectId: "multidialsum",
-      
-        storageBucket: "multidialsum.appspot.com",
-      
-        messagingSenderId: "479776189326",
-      
-        appId: "1:479776189326:web:09ac08c3d837dd611812df",
-      
-        measurementId: "G-9DFBFTBGDT"
+      apiKey: "AIzaSyByteZF109pBgI6Vx9UtMpGEjIpZf38ni0",
+
+      authDomain: "multidialsum-81124.firebaseapp.com",
+    
+      databaseURL: "https://multidialsum-81124-default-rtdb.firebaseio.com",
+    
+      projectId: "multidialsum-81124",
+    
+      storageBucket: "multidialsum-81124.appspot.com",
+    
+      messagingSenderId: "362397641329",
+    
+      appId: "1:362397641329:web:315109604809e5022a89d0"
     },
   };
   

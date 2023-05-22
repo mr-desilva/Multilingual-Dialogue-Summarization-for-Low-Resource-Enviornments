@@ -22,7 +22,7 @@ def remove_emojis(text):
         "\U0001F300-\U0001F5FF"  # symbols & pictographs
         "\U0001F680-\U0001F6FF"  # transport & map symbols
         "\U0001F1E0-\U0001F1FF"  # flags (iOS)
-        "\U00002500-\U00002BEF"  # chinese characters
+        "\U00002500-\U00002BEF"  
         "\U00002702-\U000027B0"
         "\U00002702-\U000027B0"
         "\U000024C2-\U0001F251"
@@ -77,12 +77,12 @@ def generate_mult_dialogue_summary(dialogue):
         translated_dialogue = m2m_translation(dialogue, src_lang_code, "en")
 
         # Summarize dialogue in English
-        max_new_tokens = 50
+        max_new_tokens = 60
         input_ids = tokenizer_fine_tuned(translated_dialogue, return_tensors='pt').input_ids
         summary_ids = fine_tuned_modal.generate(input_ids, max_new_tokens=max_new_tokens)
         summary_text = tokenizer_fine_tuned.decode(summary_ids[0], skip_special_tokens=True)
 
-        print('summary text ' + summary_text)
+        print('Generated English Summary : ' + summary_text)
 
         # Translate summary back to the source language
         translated_summary = m2m_translation(summary_text, 'en', src_lang_code)
@@ -109,5 +109,6 @@ def m2m_translation(text, src_lang_code, tgt_lang_code):
     translation_output = model.generate(**input_tokens, forced_bos_token_id=tokenizer.get_lang_id(
         tgt_lang_code))  # setting the model to generate the output based on the target lang code.
     translated_sentence = tokenizer.decode(translation_output[0], skip_special_tokens=True)
-    print('translated sentence in english - ' + translated_sentence)
+    print('translated dialogue in english - ' + translated_sentence)
+    print('')
     return translated_sentence
